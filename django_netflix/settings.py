@@ -37,14 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'core',
-    #Esses apps são da biblioteca de autenticação
+
+    # thir party apps
     'allauth',
     'allauth.account',
-    'django.contrib.sites',  # Make sure this line is included
     'allauth.socialaccount',
-
-
 ]
 
 MIDDLEWARE = [
@@ -136,30 +135,25 @@ STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]
 
-# Auth Stting Autenticadores
+# Auth stting
 AUTH_USER_MODEL='core.CustomUser'
 
-#Autenticador do Backend https://django-allauth.readthedocs.io/en/latest/installation.html
 AUTHENTICATION_BACKENDS = [
-    
+
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
-    
+  
 ]
 
-SITE_ID=1 
+SITE_ID=1
 
-#METODO DE AUTENTICAÇÃO
 
 ACCOUNT_AUTHENTICATION_METHOD='email'
 ACCOUNT_EMAIL_REQUIRED=True
-ACCOUNT_EMAIL_VERIFICATION='nome'
+ACCOUNT_EMAIL_VERIFICATION='none'
 ACCOUNT_USERNAME_REQUIRED=False
 
 LOGIN_REDIRECT_URL='/'
-
-
-

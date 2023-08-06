@@ -67,7 +67,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("title", models.CharField(max_length=255)),
-                ("descripion", models.TextField(blank=True, null=True)),
+                ("description", models.TextField(blank=True, null=True)),
                 ("created", models.DateTimeField(auto_now_add=True)),
                 ("uuid", models.UUIDField(default=uuid.uuid4)),
                 (
