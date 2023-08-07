@@ -20,7 +20,6 @@ Netflix
                 </h2>
                 <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
                     {{show_case.description | slice:":50"}}...
-                    {% lorem 1 %}
                 </p>
                 <div class="flex my-4">
                     <a href="{% url 'core:play' movie_id=show_case.uuid %}">
@@ -51,7 +50,7 @@ Netflix
             <div class="p-8 w-10/12 relative" >
                 <h2 class="text-gray-200 text-2xl font-medium">
                     Popular on Netflix
-                </h2>
+                </h2> <!--  A Partir da qui que vem a lista dos bonitos estupidos-->
                 <div class="flex   items-center min-w-full  movie_lis">
                     {% for movie in movies %} <!-- Mano aqui que ele esta gerando a lista de filmes da parte de bai--> 
                     

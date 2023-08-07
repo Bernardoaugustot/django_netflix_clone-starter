@@ -87,6 +87,8 @@ class ShowMovieDetail(View):
         except Movie.DoesNotExist:
             return redirect('core:profile_list')
 
+
+# A
 @method_decorator(login_required,name='dispatch')
 class ShowMovie(View):
     def get(self,request,movie_id,*args, **kwargs):

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Netflix - Profile
+Netflix - ProfileList 
 {% endblock title %}
 
 {% block content %}
@@ -19,7 +19,7 @@ Netflix - Profile
 
         {% for profile in profiles %}
             <a href="{% url 'core:watch' profile_id=profile.uuid %}">
-            
+                    <!-- Aqui estamos edirecionando para a pagina do perfil escolido -->
                 <div class="w-32 h-32 m-4  bg-blue-500 flex justify-center items-center flex-col rounded-md cursor-pointer">
                     <p class='text-6xl'>
                         {{profile.name | slice:":1"}}
