@@ -22,7 +22,7 @@ Netflix
                     {{show_case.description | slice:":50"}}...
                 </p>
                 <div class="flex my-4">
-                    <a href="{% url 'core:play' movie_id=show_case.uuid %}">
+                    <a href="{% url 'core:play' movie_id=show_case.id %}">
                     
                         <button class="flex items-center bg-white py-2 px-5 rounded-md" style='color:black;'>
                             <ion-icon name="play" class="text-2xl"></ion-icon>
@@ -52,8 +52,9 @@ Netflix
                     Popular on Netflix
                 </h2> <!--  A Partir da qui que vem a lista dos bonitos estupidos-->
                 <div class="flex   items-center min-w-full  movie_lis">
-                    {% for movie in movies %} <!-- Mano aqui que ele esta gerando a lista de filmes da parte de bai--> 
-                    
+                    {% for movie in movies %} <!-- Mano aqui que ele esta gerando a lista de filmes da parte de de uma rotação simples--> 
+                    <!-- No caso eu teria que gerar uma nova planilha com os filmes recomendados, e trazelos em ordem.-->
+                    <!-- Porem antes disso terei que fazer a rapagem de filha da puta.-->
                         <a href="{% url 'core:show_det' movie_id=movie.uuid %}">
                             <div class=" h-40 m-4  bg-blue-500 overflow-hidden flex-shrink-0 rounded-md cursor-pointer w-40">
                                 <img src="{{movie.flyer.url}}" class="w-full h-full " alt="">
