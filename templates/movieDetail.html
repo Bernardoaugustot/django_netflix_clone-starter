@@ -10,21 +10,19 @@
 {% endblock others %}
 
 {% block content %}
-
+<!---templates/movieDetail.html -->
     {% include 'partials/navbar.html' %}
-    <main class='bg-primary_black min-h-screen w-full'>                                                              <!-- {{movie.flyer.url}}      -->"       
-        <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex  items-end bg-cover" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg); background-size: 50%  ">
+    <main class='bg-primary_black min-h-screen w-full'>                                                              <!-- {{movie.flyer.url}}      -->      
+        <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex  items-end bg-cover" style="background-image: url('{{ movie.flyer }}') ">
             <div>
                 <h2 class="text-6xl font-semibold text-white my-4">
                     {{movie.title}}
                 </h2>
                 <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
-                    {{movie.description |slice:":50"}}...  <!-- TA APARECENDO A MERDA EM LATIN AQUI-->
-                    <!-- {%  lorem 1 %} o responsavel pela merda, que filha da PUTA -->
+                    {{movie.description }}...  
                 </p>
                 <div class="flex my-4">
-                    <a href="{% url 'core:play' movie_id=movie.uuid %}">
-                    
+                    <a href="{% url 'core:play' movie_id=movie.uuid %}">                    
                         <button class="flex items-center bg-white py-2 px-5 rounded-md" style='color:black;'>
                             <ion-icon name="play" class="text-2xl"></ion-icon>
                             <span class="ml-3 font-medium">

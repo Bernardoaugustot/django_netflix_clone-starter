@@ -11,11 +11,14 @@ https://www.youtube.com/watch?v=bVswSaLUe0I
 ##### OBJETIVOS ##########
 AGORA QUE TERMINAMOS ESSA PORRA VAMOS PARA OS REAIS OBJETIVOS
 
-- INJETAR NOSSOS FILMES (RASPAGEM + INJETAR SQL)
-- ENTENDER COMO FUNCIONA ORDEM QUE APARECE
+- Corrijir a exibição em lista
+- Corrigir a imagem de exibição
+- Pq quando tenta abrir uma nova aba volta para a home?
 
 
 Login de ADMIN:
 user: super
 email: super@super.com 
 senha: super1234
+
+
