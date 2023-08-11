@@ -8,12 +8,25 @@ infinit scroll
 https://www.youtube.com/watch?v=bVswSaLUe0I
 
 
-##### OBJETIVOS ##########
-AGORA QUE TERMINAMOS ESSA PORRA VAMOS PARA OS REAIS OBJETIVOS
+MachineLearn:
+https://www.youtube.com/watch?v=kuC38ZCcbZI
+https://github.com/Chando0185/movie_recommender_system
 
-- Corrijir a exibição em lista
-- Corrigir a imagem de exibição
-- Pq quando tenta abrir uma nova aba volta para a home?
+
+##### OBJETIVOS ##########
+AGORA QUE TERMINAMOS ESSA PORRA VAMOS PARA OS REAIS OBJETIVOS:
+    Trabalhar com recomendação. Vai ser trabalhoso e vamos ter que espandir bastante o que ja temos.
+    vamos usar novos petodos.
+    criar novas planilhas com nossos dados e associalos.
+
+    Nos detalhes dos filmes ter a opção de gostar ou não gostar.
+    Quando gostar ou negar um filme
+
+Fatores para calculo:
+Genero
+Ator
+
+Dataset atores esta vinculado a 
 
 
 Login de ADMIN:
